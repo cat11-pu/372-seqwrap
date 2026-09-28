@@ -1,0 +1,16 @@
+{
+  "budget": 2,
+  "span": 100,
+  "bad_seq_code": "E_BAD_SEQ",
+  "too_old_code": "E_TOO_OLD",
+  "ambiguous_code": "E_AMBIGUOUS",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "last": -1, "judge": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "set", "seq": 95 },
+    { "id": 2, "kind": "set", "seq": 5 },
+    { "id": 3, "kind": "judge", "a": 5, "b": 95 },
+    { "id": 4, "kind": "judge", "a": 95, "b": 5 },
+    { "id": 5, "kind": "set", "seq": 40 }
+  ]
+}
