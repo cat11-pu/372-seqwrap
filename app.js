@@ -1,5 +1,4 @@
 // app.js：渲染结果
-import { distanceOf, newerOf } from "./wrap.js";
 import { step, close } from "./wraprun.js";
 
 export function render(spec) {
@@ -31,7 +30,6 @@ export function render(spec) {
            mid_differs: fingerprint(r2.state) !== fingerprint(first.state),
            closed_equal: fingerprint(closedTwo.state) === fingerprint(closed.state),
            replay_new: replay.served, judged: first.judged, judged_bound: first.judged_bound,
-           full_diff: fingerprint(closed.state) === fingerprint(fullClosed.state) ? 0 : 1,
            count_events: events.length,
-           tail: distanceOf(5, 95, 100) + newerOf(5, 95, 100) };
+           full_diff: fingerprint(closed.state) === fingerprint(fullClosed.state) ? 0 : 1 };
 }
